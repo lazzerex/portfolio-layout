@@ -2,26 +2,32 @@
 
 @section('content')
     <!-- Hero Section -->
-    <div class="relative bg-white overflow-hidden">
-        <div class="max-w-7xl mx-auto">
-            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+    <div class="relative min-h-[60vh] bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-20 bg-[url('/images/backgrounds/pattern.svg')]"></div>
+        <div class="max-w-7xl mx-auto relative">
+            <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
                 <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                     <div class="sm:text-center lg:text-left">
-                        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl animate-fade-in">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl animate-fade-in">
                             <span class="block">My Projects</span>
                         </h1>
-                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 animate-fade-in-up" style="animation-delay: 200ms">
+                        <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 animate-fade-in-up">
                             A collection of my work showcasing expertise in web development, systems programming, and full-stack solutions.
                         </p>
                     </div>
                 </main>
             </div>
         </div>
-        <!-- Decorative blob -->
-        <div class="absolute right-0 top-0 -z-10 opacity-10">
-            <svg class="w-96 h-96" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Decorative Elements -->
+        <div class="absolute right-0 top-0 -z-10">
+            <svg class="w-96 h-96 text-white/5" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.5,90,-16.3,88.5,-1.5C87,13.3,81.4,26.5,73.6,38.4C65.8,50.3,55.7,60.9,43.2,67.4C30.7,73.9,15.3,76.3,0.7,75.2C-13.9,74.1,-27.7,69.4,-41.5,62.8C-55.3,56.2,-69,47.6,-77.1,35.4C-85.2,23.2,-87.7,7.4,-85.9,-8.2C-84.1,-23.8,-78,-39.2,-67.7,-49.5C-57.4,-59.8,-42.9,-65,-29.6,-70.5C-16.3,-76,-8.2,-81.8,3.4,-87.8C15,-93.8,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
             </svg>
+        </div>
+        <!-- Animated Dots -->
+        <div class="absolute left-0 bottom-0 w-full h-40 opacity-20" 
+             style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;">
         </div>
     </div>
 
